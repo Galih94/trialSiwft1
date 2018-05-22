@@ -13,6 +13,8 @@
 		301EBBBF20A430C6004BFA35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301EBBBD20A430C6004BFA35 /* Main.storyboard */; };
 		301EBBC120A430C6004BFA35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 301EBBC020A430C6004BFA35 /* Assets.xcassets */; };
 		301EBBC420A430C6004BFA35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301EBBC220A430C6004BFA35 /* LaunchScreen.storyboard */; };
+		3021318520B45BAA0099EF0A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3021318420B45BAA0099EF0A /* Model.swift */; };
+		3021318720B45BC40099EF0A /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3021318620B45BC40099EF0A /* ServerManager.swift */; };
 		30B0123520A86BFE00BB0D66 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B0123320A86BFE00BB0D66 /* MainViewController.swift */; };
 		30B0123620A86BFE00BB0D66 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30B0123420A86BFE00BB0D66 /* MainViewController.xib */; };
 /* End PBXBuildFile section */
@@ -26,6 +28,8 @@
 		301EBBC020A430C6004BFA35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		301EBBC320A430C6004BFA35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		301EBBC520A430C6004BFA35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3021318420B45BAA0099EF0A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		3021318620B45BC40099EF0A /* ServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
 		30B0123320A86BFE00BB0D66 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		30B0123420A86BFE00BB0D66 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		33C8477942763DDE6FD59C9D /* Pods-trial1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trial1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-trial1/Pods-trial1.debug.xcconfig"; sourceTree = "<group>"; };
@@ -77,6 +81,8 @@
 				301EBBB920A430C6004BFA35 /* AppDelegate.swift */,
 				301EBBBB20A430C6004BFA35 /* ViewController.swift */,
 				30B0123320A86BFE00BB0D66 /* MainViewController.swift */,
+				3021318420B45BAA0099EF0A /* Model.swift */,
+				3021318620B45BC40099EF0A /* ServerManager.swift */,
 				30B0123420A86BFE00BB0D66 /* MainViewController.xib */,
 				301EBBBD20A430C6004BFA35 /* Main.storyboard */,
 				301EBBC020A430C6004BFA35 /* Assets.xcassets */,
@@ -207,10 +213,22 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-trial1/Pods-trial1-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyUserDefaults/SwiftyUserDefaults.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyUserDefaults.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -224,9 +242,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3021318720B45BC40099EF0A /* ServerManager.swift in Sources */,
 				30B0123520A86BFE00BB0D66 /* MainViewController.swift in Sources */,
 				301EBBBC20A430C6004BFA35 /* ViewController.swift in Sources */,
 				301EBBBA20A430C6004BFA35 /* AppDelegate.swift in Sources */,
+				3021318520B45BAA0099EF0A /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

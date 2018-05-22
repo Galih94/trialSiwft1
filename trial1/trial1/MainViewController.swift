@@ -10,13 +10,12 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var resultLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         print("reached here")
-        var tempArr : [Int] = [2,4,5,2,4,9]
-        print(tempArr)
-        tempArr.sorted(by: { $0.tempArr > $1.tempArr })
-        print(tempArr)
+        
         // Do any additional setup after loading the view.
     }
 
@@ -26,14 +25,7 @@ class MainViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func buttonTapped(_ sender: Any) {
+        
     }
-    */
-
 }
